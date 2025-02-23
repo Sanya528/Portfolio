@@ -1,0 +1,61 @@
+body{
+    background-color: #90a8c7;
+    overflow-x: hidden;
+}
+h1{
+    padding-top: 2%; 
+    padding-left: 5%;
+    font-family: "WindSong", serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+p{
+    padding-left:7%;
+    padding-right: 7%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.6; 
+}
+.contactIcons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 10%;
+    margin-left: 7%;
+}
+.contactIcons img{
+    background-color: #344964;
+    padding: 7px;
+    border-radius: 30%;
+}
+.contactIcons img:hover {
+    background-color: #122134;
+    transform: scale(1.1); 
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    height: 450px;
+    width: auto;
+    border-radius: 50%;
+}
+.image:hover{
+    transform: scale(1.05); 
+    transition: transform 0.3s ease-in-out;
+}
+.image img{
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+}
+footer{
+    background-color: #122134;
+    width: 100%; /* Stretch to full width */
+    height: 50px;
+    font-size: small;
+    text-align: center; /* Center text */
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

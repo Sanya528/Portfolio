@@ -1,0 +1,71 @@
+body{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #ffeacf;
+    color: rgb(201, 57, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.intro img{
+    border-radius: 50%;
+    margin-bottom: 20px;
+    /* image-rendering:crisp-edges; */
+}
+.intro img:hover{
+    transform: scale(1.09);
+    transition: transform 0.3s ease-in-out;
+}
+
+h1 {
+    font-family: "WindSong", serif;
+    font-size: 50px;
+    font-weight:bold;
+    margin-bottom: 0%;
+}
+h2 {
+    font-family: 'WindSong', serif;
+    font-size: 30px;
+}
+hr{
+    width: 50%;
+    text-align: center;
+    border: none; /* Remove default border style */
+    height: 2px; /* Set height for the line */
+    background-color: #f0d6b2; /* Set the color to the described value */
+    margin: 10px auto; /* Center the line and add spacing */
+    
+}
+
+.section {
+    margin-bottom: 50px;
+}
+.contact-info, .skills, .projects, .certificates,.education,.leadership {
+    margin-left: 45px;
+}
+.contact-info p, .skills ul, .projects ul, .certificates ul,.education p,.leadership ul {
+    margin-left: 50px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    margin-bottom: 5px;
+}
+footer {
+    width: 100%; /* Stretch to full width */
+    height: 50px;
+    font-size: small;
+    text-align: center; /* Center text */
+    line-height: 50px; /* Vertically center content within footer */
+    background-color: rgb(157, 74, 42); /* Match span color for cohesion */
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
