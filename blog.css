@@ -1,14 +1,31 @@
 body {
-    background-color: blanchedalmond;
+    background-image: linear-gradient(30deg,#000,#000e2c);
+    color: white;
     margin: 0;
     padding: 0;
-    min-height: 100vh; /* Ensures full height */
+    min-height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.blog{
+    background-color: #122436;
+    color: white;
+    border:#0a1d31 solid 0.1px;
+    background: rgba(45, 64, 76, 0.139); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 10px;
+    width: 90%; 
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    margin: 5%;
 }
 
 p {
     padding-left:7%;
     padding-right: 7%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     line-height: 1.6; /* Improve readability */
 }
@@ -22,13 +39,13 @@ h1 {
 }
 
 footer {
-    width: 100%; /* Stretch to full width */
+    width: 100%; 
     height: 50px;
     font-size: small;
-    text-align: center; /* Center text */
-    line-height: 50px; /* Vertically center content within footer */
-    color: #b59a73;; /* Match span color for cohesion */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    line-height: 50px; 
+    background-color: #122436;
+    color: white;
 }
 
 a {
@@ -37,6 +54,3 @@ a {
     text-decoration: none;
 }
 
-span {
-    color: #b59a73;
-}

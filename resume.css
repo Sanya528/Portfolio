@@ -3,9 +3,18 @@ body{
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #ffeacf;
-    color: rgb(201, 57, 0);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(30deg,#000,#000e2c);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+    margin-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
 .intro{
@@ -16,41 +25,44 @@ body{
 .intro img{
     border-radius: 50%;
     margin-bottom: 20px;
-    /* image-rendering:crisp-edges; */
+    
 }
 .intro img:hover{
     transform: scale(1.09);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 1s linear, box-shadow 1s linear;
+    filter:drop-shadow(5px 0 5px rgba(1, 187, 255, 0.15))  /* top glow */
+          drop-shadow(-5px 0 5px rgba(0, 145, 255, 0.15))   /* right glow */
+          drop-shadow(0 -5px 5px rgba(255, 255, 255, 0.15)); /* left glow */
 }
 
 h1 {
     font-family: "WindSong", serif;
     font-size: 50px;
-    font-weight:bold;
     margin-bottom: 0%;
 }
 h2 {
     font-family: 'WindSong', serif;
     font-size: 30px;
 }
-hr{
-    width: 50%;
-    text-align: center;
-    border: none; /* Remove default border style */
-    height: 2px; /* Set height for the line */
-    background-color: #f0d6b2; /* Set the color to the described value */
-    margin: 10px auto; /* Center the line and add spacing */
-    
-}
 
-.section {
+section {
+    width: 90%;
+    padding:0px 20px 20px 20px;
     margin-bottom: 50px;
+    background-color: #122436;
+    color: white;
+    border:#0a1d31 solid 0.1px;
+    background: rgba(45, 64, 76, 0.139); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 10px;
 }
-.contact-info, .skills, .projects, .certificates,.education,.leadership {
+.contact-info, .skills, .projects, .certificates,.education,.leadership,.extra,.summary {
     margin-left: 45px;
 }
-.contact-info p, .skills ul, .projects ul, .certificates ul,.education p,.leadership ul {
+.contact-info p, .skills ul, .projects ul, .certificates ul,.education p,.leadership ul,.extra ul,.summary  p{
     margin-left: 50px;
+    line-height: 1.8;
 }
 ul {
     list-style: none;
@@ -65,7 +77,6 @@ footer {
     font-size: small;
     text-align: center; /* Center text */
     line-height: 50px; /* Vertically center content within footer */
-    background-color: rgb(157, 74, 42); /* Match span color for cohesion */
+    background-color: #122436; /* Match span color for cohesion */
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

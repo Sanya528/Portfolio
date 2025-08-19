@@ -1,106 +1,109 @@
-/* #fddad4; #f6e2d7;*/
-/* #e9a5a6; */
-/* #e2725b #ffd1a3 */
-body{
-    background-color: #f6e2d7;
-    color:#2c2c2c;
+body {
+    background-image: linear-gradient(30deg,#000,#000e2c);
+    color: white;
+    overflow-x: hidden;
+    font-family: 'Courier New', Courier, monospace;
     width: 100%;
     min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header{
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-section{
+
+section {
     margin-bottom: 50px;
 }
 
-.webdev .cards{
+.webdev .cards,
+.others .cards {
+    margin:0px 100px 0px 100px;
+}
+
+.webdev .cards div,
+.others .cards div {
+    color: white;
+    border: #0a1d31 solid 0.1px;
+    background: rgba(45, 64, 76, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
     display: flex;
-    flex-direction: row;
-    height:300px;
-    width: 58%;
-    gap: 20px;
-    flex-wrap: nowrap;
-    margin-left: 21%;
-    margin-left: 21%;
-}
-.webdev .cards div{
-    background-color: #d77a61;
-    border-radius: 5%;
-    height: 100%;
-    width: auto;
-    flex:1;
-}
-.webdev .cards div:hover{
-    color:#f6e2d7;
-    background-color: #81b29a;
-    transform: scale(1.05); 
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-.webdev .cards div img{
-    width: 80%;
-    height: 65%;
-    border-radius: 50%;
-    position: relative;
-    top: 10%;
-    left:10%;
-}
-.webdev .cards div p{
-    font-size: 15px;
-    font-weight: bold;
-    position: relative;
-    top: 10%;
-    text-align: center;
-}
-
-.others .cards{
-    display: flex;
-    flex-direction: row;
-    height:300px;
-    width: 58%;
-    gap: 20px;
-    flex-wrap: nowrap;
-    margin-left: 21%;
-    margin-left: 21%;
-}
-.others .cards div{
-    background-color: #81b29a;
-    color:#f6e2d7;
-    border-radius: 5%;
-    height: 100%;
-    width: auto;
-    flex:1;
-}
-
-.others .cards div:hover{
-    color:#2c2c2c;
-    background-color: #d77a61;
-    transform: scale(1.05); 
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-.others .cards div img{
-    width: 80%;
-    height: 65%;
-    border-radius: 50%;
-    position: relative;
-    top: 10%;
-    left:10%;
-}
-.others .cards div p{
-    font-size: 15px;
-    font-weight: bold;
-    position: relative;
-    top: 10%;
-    text-align: center;
+    align-items: center;
+    margin: 20px 5% 0px 10px;
+    transition: width 0.8s linear, box-shadow 0.5s ease-in-out;
+    overflow: hidden;
+    padding-left: 2%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.15); /* subtle glow */
 }
 
 
+.webdev .cards div > * {
+    flex-shrink: 0;
+}
+
+.webdev .cards div:hover,
+.others .cards div:hover {
+    width: 90%; 
+    background-image: linear-gradient(270deg,#13253814,#09121c0e,#04080c11);
+    box-shadow: 0 0 25px rgba(0, 200, 255, 0.5);
+}
+
+.webdev .cards div img,
+.others .cards div img {
+    max-width: 90%;
+    height: 90%;
+    border-radius: inherit;
+    margin: 0px;
+    background-color: rgba(255, 255, 255, 0.037);
+}
+.webdev .cards div ul,
+.others .cards div ul {
+    font-size: 16px;
+    width: 60%;
+    text-align: left;
+    list-style: none; 
+    padding: 50px;      
+    line-height: 1.5;  
+    opacity: 0;                 
+    max-height: 0;              
+    overflow: hidden;           
+    transition: opacity 0.6s ease-in, max-height 0.6s ease-in; 
+}
+
+.webdev .cards div:hover ul,
+.others .cards div:hover ul {
+    opacity: 1;
+    max-height: 200px;   
+    transition-delay: 0.4s; /* text shows only after width is half expanded */
+}
+
+.webdev .cards div:not(:hover) ul,
+.others .cards div:not(:hover) ul {
+    display: none;
+    transition-delay: 0.4s; /* delay before hiding text */
+}
+
+h1 {
+    font-family: "WindSong", serif;
+    font-size: 50px;
+    margin-bottom: 0%;
+}
+
+h2 {
+    font-family: 'WindSong', serif;
+    font-size: 30px;
+}
 
 footer {
     width: 100%; /* Stretch to full width */
@@ -108,17 +111,6 @@ footer {
     font-size: small;
     text-align: center; /* Center text */
     line-height: 50px; /* Vertically center content within footer */
-    background-color: #e2725b;
+    background-color: #122436; /* Match span color for cohesion */
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-h1 {
-    font-family: "WindSong", serif;
-    font-size: 50px;
-    font-weight:bold;
-    margin-bottom: 0%;
-}
-h2 {
-    font-family: 'WindSong', serif;
-    font-size: 30px;
 }

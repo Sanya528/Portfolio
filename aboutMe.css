@@ -1,45 +1,62 @@
 body {
-    background-color: #a9916f;
+    background-image: linear-gradient(30deg,#000,#000e2c);
     margin: 0;
     padding: 0;
     min-height: 100vh; /* Ensures full height */
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .intro {
     position: relative;
-    top: 0;
-    left: 0;
-    height: 400px; /* Stretch to fill full viewport height */
-    width: 100%; /* Stretch to full width */
+    height: 400px;
+    width: 100%;
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
 }
+
+.intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('img/AboutMe_banner.png') center/cover no-repeat;
+    filter: blur(3.5px); 
+    z-index: -1;       
+}
+
 
 .intro p, .intro h3 {
     margin: 0; /* Remove any default margin for alignment */
 }
 
 .myStory {
-    width: 100%; /* Stretch to full width */
-    min-height: auto; /* Stretch to fill viewport height */
-    background-color: blanchedalmond;
+    background-color: #122436;
+    color: white;
+    border:#0a1d31 solid 0.1px;
+    background: rgba(45, 64, 76, 0.139); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 10px;
+    width: 90%; 
+    min-height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
+    justify-content: center; 
+    margin: 5%;
 }
 
 .myStory p {
     padding-left:7%;
     padding-right: 7%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
-    line-height: 1.6; /* Improve readability */
+    line-height: 1.6; 
 }
 
 .myStory h1 {
@@ -57,9 +74,8 @@ footer {
     font-size: small;
     text-align: center; /* Center text */
     line-height: 50px; /* Vertically center content within footer */
-    background-color: #b59a73; /* Match span color for cohesion */
+    background-color: #122436; /* Match span color for cohesion */
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
@@ -69,5 +85,5 @@ a {
 }
 
 span {
-    color: #b59a73;
+    color: #e0ddcf;
 }

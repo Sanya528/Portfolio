@@ -1,6 +1,8 @@
 body{
-    background-color: #90a8c7;
+    background-image: linear-gradient(30deg,#000,#000e2c);
+    color: white;
     overflow-x: hidden;
+    font-family: 'Courier New', Courier, monospace;
 }
 h1{
     padding-top: 2%; 
@@ -13,10 +15,26 @@ h1{
 p{
     padding-left:7%;
     padding-right: 7%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     line-height: 1.6; 
 }
+
+.intro{
+    color: white;
+    border:#0a1d31 solid 0.1px;
+    background: rgba(45, 64, 76, 0.139); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 10px;
+    width: 90%; 
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    margin: 5%;
+    padding-bottom: 5%;
+}
+
 .contactIcons{
     display: flex;
     flex-direction: row;
@@ -40,22 +58,26 @@ p{
     height: 450px;
     width: auto;
     border-radius: 50%;
+    padding: 0%;
 }
 .image:hover{
-    transform: scale(1.05); 
-    transition: transform 0.3s ease-in-out;
+    transform: scale(1.02); 
+    transition: transform 0.8s linear, box-shadow 1s linear;
+    filter: drop-shadow(10px 0 10px rgba(1, 187, 255, 0.15))  /* top glow */
+          drop-shadow(-10px 0 10px rgba(0, 145, 255, 0.15))   /* right glow */
+          drop-shadow(0 -10px 10px rgba(255, 255, 255, 0.15)); /* left glow */
 }
 .image img{
     height: inherit;
     width: inherit;
     border-radius: inherit;
 }
-footer{
-    background-color: #122134;
+footer {
     width: 100%; /* Stretch to full width */
     height: 50px;
     font-size: small;
     text-align: center; /* Center text */
+    line-height: 50px; /* Vertically center content within footer */
+    background-color: #122436; /* Match span color for cohesion */
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
