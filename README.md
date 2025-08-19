@@ -1,4 +1,4 @@
-Visit my website on:
+Visit my website:
 https://sanyasharma.netlify.app/
 
 Project structure is as follows:
@@ -55,6 +55,4 @@ Interactive UI – Smooth transitions and user-friendly layout.
 Tech Stack:
 Languages: HTML, CSS
 Styling: Custom CSS
-Deployment: GitHub Pages / Netlify / Vercel
-
-
+Deployment: Netlify
