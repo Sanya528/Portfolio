@@ -53,7 +53,7 @@ Interactive UI – Smooth transitions and user-friendly layout.
 
 
 Tech Stack:
-Languages: HTML, CSS, JavaScript
+Languages: HTML, CSS
 Styling: Custom CSS
 Deployment: GitHub Pages / Netlify / Vercel
 
